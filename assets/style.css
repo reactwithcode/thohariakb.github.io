@@ -39,10 +39,12 @@ p {
 
 .item.header-container {
     grid-area: header;
+    box-shadow: none; 
 }
 
 .item.content-container {
     grid-area: content;
+    box-shadow: none; 
 }
 
 .item.footer-container {
@@ -94,11 +96,6 @@ body {
     font-weight: 300;
     padding-top: 20px;
   }
-  button {
-    max-width: 50%;
-    border-radius: 50px !important;
-  }
-
 
   h1:hover {
     color: #077AFA;
@@ -136,8 +133,16 @@ body {
     color:#683aa4;
   }
 
+  .sosmed-container {
+    display: flex;
+
+    width: 25vw;
+    margin: 40px;
+  }
+
   /* Potfolio section */
   #portfolios {
+    border-top: 1px solid #E7E7E7;
     border-bottom: 1px solid #E7E7E7;
   }
 
@@ -159,41 +164,26 @@ body {
     text-align: center;
   }
 
-  /* Slider section */
-#carouselIndicators {
-  display: flex;
-  justify-content: space-between;
-}
+  /* Carousel  Section */
 
-#carouselIndicators.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
-
-.carousel-inner {
-  width: 50%;
-  display: flex;
-}
-
-.col.skills {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-  .carousel-item {
-    width: 50%;
+  .carousel-container {
+    padding: 20px;
   }
 
-  /* Slick Carousel */
+  .col.skills {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+  }
 
-  .carousel-skills-item {
-    display: flex;
-    margin: 20px 45.5vw;
-    width: 10%;
-    display: flex;
+  .carousel-item {
+    width: 10vw;
+  }
+
+  #carouselExampleSlideOnly{
+    margin: 0 44%;
+    min-width: 100vh;
   }
 
  .icon {
@@ -207,7 +197,7 @@ body {
       background-color: #683aa4;
       border: none;
       width: 200px;
-      border-radius: 5%;
+      border-radius: 50px !important;
   }
 
   .card-body {
@@ -218,12 +208,20 @@ body {
       margin: 10px;
   }
 
+  .send-btn {
+    margin: 20px auto 20vh 0;
+    width: 200px;
+    border-radius: 50px !important;
+  }
+
   /* Footer */
 .item.footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: none;
+  border-top: 1px solid #E7E7E7;;
 }
 
 .item.footer-container p {
@@ -237,8 +235,12 @@ form {
   margin: 100px 0;
 }
 
+h1 .contact-title {
+  margin-top: 100vh;
+}
+
 .item form {
-   margin: 20vh;
+   margin: 20vh 20vw auto 10vw;
 }
 
 .mb-3 input {
