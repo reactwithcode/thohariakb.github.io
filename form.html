@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>About Me</title>
+  </head>
+  <body>
+    
+    <header id="header" class="item header-container">
+      <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            Thohari Akbar
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#portfolios">Portfolios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+      <!-- End Navbar -->
+    </header> 
+
+  <div class="item content-container">
+    <form>
+      <h1>Contact Me</h1>
+      <div class="mb-3">
+        <label for="InputFirstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="InputFirstName" placeholder="Example: John" value="">
+        <label for="InputLastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="InputLastName" placeholder="Example: Cena">
+      </div>
+      <div class="mb-3">
+        <label for="InputEmail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="InputEmail1" placeholder="Example: emailname@gmail.com">
+      </div>
+      <div class="mb-3">
+        <label for="InputPhone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="InputPhone" placeholder="Example: 081888****">
+      </div>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+  </div>
+
+  <div id="Footer" class="item footer-container">
+    <p class="copyright">Copyright &copy; 2021 | Thohari Akbar </p>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $('document').ready(function(){
+
+      console.log($('#InputFirstName').html());
+
+      var message = $('<p style="color: #683aa4">Succeed!</p>');
+      $('.btn').last('btn').on('click', function(){
+        alert('Succeed!');
+      });
+    });
+  </script>  
+</body>
+</html>
